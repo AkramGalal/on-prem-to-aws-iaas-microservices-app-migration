@@ -16,7 +16,7 @@ The application architecture is composed of 5 microservices. They are:
 | Cache           | Memcached               | Amazon EC2 |
 | Database        | MariaDB                 | Amazon EC2  |
 
-Each service is hosted on its own EC2 instance for scalability. Security groups are configured to allow only the required ports between services.
+Each service is hosted on a separate EC2 instance for scalability. Security groups are configured to allow only the required ports between services.
 
 ## Setup and Service Deployment
   - Provision separate EC2 instances for each microservice.

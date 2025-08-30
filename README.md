@@ -1,7 +1,8 @@
 # On-Prem to AWS IaaS App Migration
 
 ## Introduction
-This repository illustrates the migration of a multi-tier microservices Java application from an on-premises environment to AWS IaaS services.  
+This repository illustrates the migration of a multi-tier microservices Java application from an on-premises environment to AWS IaaS services.https://github.com/AkramGalal/on-prem-to-aws-iaas-microservices-app-migration/blob/main/README.md
+
 Originally, the application was deployed using Vagrant on multiple VMs on-prem. The application is re-architected to leverage AWS managed Infrastructure as a Services (IaaS) for scalability, high availability, and reduced operational overhead.
 
 ## Application Architecture
@@ -21,7 +22,7 @@ Each service is hosted on a separate EC2 instance for scalability. Security grou
 ## Setup and Service Deployment
   - Provision separate EC2 instances for each microservice.
   - Use Amazon Linux 2 as base AMI for all EC2.
-  - Each EC2 instance is initialized with a bootstrap script to install and configure the required service.
+  - Each EC2 instance is provisioned using a bootstrap script to install and configure the required service.
   - Configure security groups to expose only the necessary ports:
      - Nginx (80/443)
      - Tomcat (8080)
